@@ -1,0 +1,36 @@
+{
+  "manifest_version": 2,
+  "name": "QR Code Scanner",
+  "version": "1.0.0",
+  "description": "Scan QR codes using your camera or capture them from your screen. Automatically opens URLs found in QR codes.",
+  "author": "Juan C",
+  "homepage_url": "https://github.com/juan-cabrera/qr-scanner",
+  
+  "permissions": [
+    "tabs"
+  ],
+  
+  "browser_action": {
+    "default_icon": {
+      "48": "icon.png",
+      "96": "icon-96.png"
+    },
+    "default_title": "QR Code Scanner"
+  },
+  
+  "background": {
+    "scripts": ["background.js"]
+  },
+  
+  "icons": {
+    "48": "icon.png",
+    "96": "icon-96.png"
+  },
+  
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "e0632ec7-709a-48f6-a367-4d765eab69d1",
+      "strict_min_version": "145.0"
+    }
+  }
+}
